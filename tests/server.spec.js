@@ -43,7 +43,7 @@ describe('server/app.js', function() {
       .get('/')
       .end((err, res) => {
         expect(err).not.exist;
-        expect(JSON.stringify(res.text)).to.contain('This Should Fail');
+        expect(JSON.stringify(res.text)).to.contain('Continuous Deployment Works!');
         done();
       });
   });
